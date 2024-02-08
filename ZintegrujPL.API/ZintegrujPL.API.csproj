@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZintegrujPL.Core\ZintegrujPL.Core.csproj" />
+    <ProjectReference Include="..\ZintegrujPL.DAL\ZintegrujPL.DAL.csproj" />
+    <ProjectReference Include="..\ZintegrujPL.DTOs\ZintegrujPL.DTOs.csproj" />
+    <ProjectReference Include="..\ZintegrujPL.Infrastructure\ZintegrujPL.Infrastructure.csproj" />
+    <ProjectReference Include="..\ZintegrujPL.Services\ZintegrujPL.Services.csproj" />
+  </ItemGroup>
+
+</Project>
